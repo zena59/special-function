@@ -12,10 +12,10 @@ do k=m,l
 end do
 test=oddeven(m)
 if ((1-(x**2))<0 .and. test==1) then
-sol=((-1)**m)*(2**l)*(((x**2)-1)**(real(m)/2))*s
-Print*, 'It is complex number'
+	sol=((-1)**m)*(2**l)*(((x**2)-1)**(real(m)/2))*s
+	Print*, 'It is complex number'
 else
-sol=((-1)**m)*(2**l)*((1-(x**2))**(real(m)/2))*s
+	sol=((-1)**m)*(2**l)*((1-(x**2))**(real(m)/2))*s
 end if
 end function P
  
@@ -26,9 +26,9 @@ implicit none
 integer::n,m,x
 x=(-1)**n
 if (x==-1) then
-m=1
+	m=1
 else
-m=0
+	m=0
 end if
 end function oddeven
  
